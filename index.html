@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Professional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="user-profile">
+                <div class="avatar">
+                    <img src="https://ui-avatars.com/api/?name=AI&background=00d2ff&color=fff" alt="Bot">
+                    <span class="online-status"></span>
+                </div>
+                <div class="info">
+                    <h3>مساعد الذكاء الاصطناعي</h3>
+                    <p>متصل الان</p>
+                </div>
+            </div>
+            <div class="actions">
+                <i class="fas fa-video video-btn"></i>
+                <i class="fas fa-phone phone-btn"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <div id="chat-display" class="chat-body">
+            <div class="message bot">
+                <div class="text">أهلاً بك! لقد قمت بتحديث الألوان لتكون أكثر حيوية. كيف يمكنني مساعدتك اليوم؟</div>
+                <span class="time">10:00 ص</span>
+            </div>
+        </div>
+
+        <form id="chat-input-form" class="chat-footer">
+            <div class="input-group">
+                <i class="far fa-smile"></i>
+                <input type="text" id="user-msg" placeholder="اكتب رسالتك هنا..." autocomplete="off">
+                <i class="fas fa-paperclip"></i>
+            </div>
+            <button type="submit" class="send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
